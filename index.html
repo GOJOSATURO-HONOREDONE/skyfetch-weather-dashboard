@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>SkyFetch Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -8,11 +9,14 @@
 
     <h1>SkyFetch 🌤</h1>
 
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
 
     <div id="weatherResult"></div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
+
 </body>
 </html>
