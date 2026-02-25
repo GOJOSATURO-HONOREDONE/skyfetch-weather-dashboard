@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SkyFetch Weathers Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFetch Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>SkyFetch 🌤</h1>
+    <header>
+        <h1>SkyFetch 🌤 Weather Dashboard</h1>
+    </header>
 
+    <!-- Search Form -->
     <div class="search-box">
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button onclick="getWeather()">Get Weather</button>
+        <form id="search-form">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
     </div>
 
-    <div id="weatherResult"></div>
+    <!-- Current Weather Display -->
+    <div id="current-weather"></div>
 
+    <!-- 5-Day Forecast Cards -->
+    <div id="forecast-cards" class="forecast-grid"></div>
+
+    <!-- JS -->
     <script src="app.js"></script>
-
 </body>
 </html>
