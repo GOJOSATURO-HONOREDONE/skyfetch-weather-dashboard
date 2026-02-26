@@ -8,25 +8,30 @@
 </head>
 <body>
 
-    <header>
-        <h1>SkyFetch 🌤 Weather Dashboard</h1>
-    </header>
+    <div class="container">
+        <h1>SkyFetch 🌤</h1>
 
-    <!-- Search Form -->
-    <div class="search-box">
-        <form id="search-form">
-            <input type="text" id="cityInput" placeholder="Enter city name" required>
-            <button type="submit">Get Weather</button>
+        <!-- Search Form -->
+        <form id="searchForm" class="search-box">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name"
+                required
+            >
+            <button type="submit">Search</button>
         </form>
+
+        <!-- Recent Searches -->
+        <div class="recent-container">
+            <h3>Recent Searches</h3>
+            <div id="recentSearches" class="recent-searches"></div>
+        </div>
+
+        <!-- Weather Result -->
+        <div id="weatherResult" class="weather-card"></div>
     </div>
 
-    <!-- Current Weather Display -->
-    <div id="current-weather"></div>
-
-    <!-- 5-Day Forecast Cards -->
-    <div id="forecast-cards" class="forecast-grid"></div>
-
-    <!-- JS -->
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
